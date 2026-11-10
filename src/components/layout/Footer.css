@@ -1,0 +1,219 @@
+/* ==========================================================================
+   FOOTER - EDITORIAL MODERN MINIMALIST
+   Brand: bikin.portofoliomu | UI/UX Principles
+   ========================================================================== */
+
+.editorial-footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding-top: clamp(3rem, 6vw, 4.5rem);
+  padding-bottom: clamp(2rem, 4vw, 3rem);
+  position: relative;
+}
+
+/* Grid 3-Pane Utama */
+.footer-main-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Pane 1: Brand & Profil */
+.footer-pane-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 380px;
+}
+
+.footer-brand-title {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.footer-brand-role {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin: 0;
+}
+
+.footer-brand-location {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  margin: 0 0 8px 0;
+}
+
+.footer-brand-summary {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* Heading Kolom */
+.footer-section-heading {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  margin: 0 0 16px 0;
+}
+
+/* Pane 2: Navigasi */
+.footer-pane-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 16px;
+}
+
+.footer-nav-anchor {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.footer-nav-anchor:hover {
+  color: var(--color-accent);
+  transform: translateX(2px);
+}
+
+/* Pane 3: Koneksi & Medsos */
+.footer-pane-connect {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-chips-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-chip-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm, 6px);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  max-width: 200px;
+}
+
+.footer-chip-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background-color: var(--color-accent-subtle);
+  transform: translateX(2px);
+}
+
+.chip-arrow-icon {
+  color: var(--color-text-muted);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-chip-btn:hover .chip-arrow-icon {
+  color: var(--color-accent);
+  transform: translate(2px, -2px);
+}
+
+/* Garis Pembatas Tipis */
+.footer-horizontal-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-border);
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-copyright-note {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-atribusi-bikin strong {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.footer-scroll-top-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm, 6px);
+  padding: 8px 14px;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.footer-scroll-top-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background-color: var(--color-accent-subtle);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-pane-brand {
+    max-width: 100%;
+  }
+
+  .footer-chip-btn {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-scroll-top-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

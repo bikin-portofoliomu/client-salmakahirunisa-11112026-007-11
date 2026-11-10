@@ -1,0 +1,319 @@
+/* ==========================================================================
+   PENGHARGAAN & SERTIFIKAT - CLEAN MODERN MINIMALIST (SECTION 8)
+   Brand: bikin.portofoliomu
+   ========================================================================== */
+
+.awards-certs-section {
+  background-color: var(--color-bg);
+  position: relative;
+}
+
+.awards-certs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+/* Sub-block Styling */
+.awards-sub-block,
+.certs-sub-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sub-block-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sub-block-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.sub-block-heading {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+/* ==========================================================================
+   1. DAFTAR PENGHARGAAN (AWARDS)
+   ========================================================================== */
+
+.awards-list-clean {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.award-card-clean {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md, 8px);
+  padding: 18px 24px;
+  transition: all 0.25s ease;
+}
+
+.award-card-clean:hover {
+  border-color: var(--color-accent);
+  background-color: var(--color-surface-hover);
+  transform: translateX(4px);
+}
+
+.award-year-tag {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  background-color: var(--color-accent-subtle);
+  border: 1px solid rgba(255, 59, 29, 0.15);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm, 4px);
+  white-space: nowrap;
+}
+
+.award-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.award-title-text {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.award-desc-text {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.award-inst-tag {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  background-color: var(--color-surface-variant);
+  border: 1px solid var(--color-border);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm, 4px);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   2. GRID SERTIFIKASI PROFESI RESMI (CERTIFICATES)
+   ========================================================================== */
+
+.certs-grid-standard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.cert-card-clean {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md, 8px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.cert-card-clean:hover {
+  border-color: var(--color-accent);
+  background-color: var(--color-surface-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+}
+
+.cert-card-clean:focus-visible {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+/* Media Stage */
+.cert-media-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: var(--color-surface-variant);
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cert-media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.cert-card-clean:hover .cert-media-img {
+  transform: scale(1.04);
+}
+
+/* Hover Pill Overlay */
+.cert-hover-pill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: rgba(17, 24, 39, 0.88);
+  backdrop-filter: blur(8px);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  opacity: 0;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.cert-card-clean:hover .cert-hover-pill {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Fallback box jika gambar belum terpasang */
+.cert-fallback-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cert-fallback-icon {
+  color: var(--color-accent);
+  opacity: 0.6;
+}
+
+.cert-fallback-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* Body Content */
+.cert-body-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.cert-meta-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.cert-issuer-name {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.cert-meta-dot {
+  opacity: 0.5;
+}
+
+.cert-year-val {
+  font-weight: 500;
+}
+
+.cert-heading-title {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.4;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cert-action-footer {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+}
+
+.cert-verify-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s ease;
+}
+
+.cert-verify-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   RESPONSIVE (768px - 375px)
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .certs-grid-standard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .award-card-clean {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .certs-grid-standard {
+    grid-template-columns: 1fr;
+  }
+}

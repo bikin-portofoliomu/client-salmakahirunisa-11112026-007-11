@@ -1,0 +1,169 @@
+/* ==========================================================================
+   KEMAMPUAN BAHASA - CLEAN MODERN MINIMALIST (SECTION 7)
+   Brand: bikin.portofoliomu | Zero Artificial Percentage Rule
+   ========================================================================== */
+
+.languages-section {
+  background-color: var(--color-bg);
+  position: relative;
+}
+
+.languages-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* Grid 3-Kolom Bahasa */
+.languages-grid-clean {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.language-card-clean {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md, 8px);
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: none;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.language-card-clean:hover {
+  border-color: var(--color-accent);
+  background-color: var(--color-surface-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+.language-card-clean:focus-visible {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+/* Top: Icon & Badge */
+.lang-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.lang-icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm, 6px);
+  background-color: var(--color-accent-subtle);
+  color: var(--color-accent);
+  border: 1px solid rgba(255, 59, 29, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-badge-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm, 4px);
+  background-color: var(--color-surface-variant);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}
+
+/* Body */
+.lang-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.lang-name-display {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.lang-proficiency-label {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin: 0;
+}
+
+.lang-context-description {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Footer Card */
+.lang-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+}
+
+.lang-check-icon {
+  color: #10B981;
+  flex-shrink: 0;
+}
+
+.lang-verified-text {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Editorial Note */
+.languages-editorial-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-sm, 6px);
+  padding: 16px 20px;
+}
+
+.lang-note-icon {
+  color: var(--color-accent);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.lang-note-copy {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .languages-grid-clean {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

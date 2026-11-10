@@ -1,0 +1,366 @@
+{
+  "template": "template-portofolio11",
+  "edition": "Neue Grid Vanguard",
+  "exportedAt": "2026-10-06T09:15:00.000Z",
+  "content": {
+    "personal": {
+      "name": "Teddy Indra Wijaya",
+      "role": "Sekretaris Kabinet Republik Indonesia (Kabinet Merah Putih)",
+      "location": "DKI Jakarta, Indonesia",
+      "quote": "Disiplin, loyalitas, dan pengabdian tanpa pamrih adalah kehormatan tertinggi bagi seorang prajurit dalam melayani bangsa dan negara.",
+      "avatarUrl": "/assets/profile/profile.png",
+      "whatsapp": "081234567890",
+      "email": "setkab@setkab.go.id",
+      "birthDate": "14/04/1989",
+      "bioSummary": "Perwira menengah TNI Angkatan Darat berkualifikasi infanteri dan pasukan khusus (Kopassus) yang memiliki rekam jejak panjang dalam operasi militer, pengawalan kepresidenan, serta tata kelola administrasi strategis kenegaraan. Menyelesaikan pendidikan militer di dalam dan luar negeri, termasuk meraih predikat lulusan terbaik Ranger School di Amerika Serikat. Berpengalaman mendampingi pimpinan tertinggi negara mulai dari Asisten Ajudan Presiden ke-7 RI hingga Ajudan Menteri Pertahanan RI, dan saat ini mengemban amanah memimpin pengelolaan dukungan manajemen kabinet pemerintahan.",
+      "statusText": "Sekretaris Kabinet Republik Indonesia (Kabinet Merah Putih)"
+    },
+    "metrics": {
+      "totalCertificates": 10,
+      "birthDateForAge": "1989-04-14",
+      "totalSkillsCount": 24,
+      "instagramFollowers": "1.2M"
+    },
+    "galleryDescription": "Dokumentasi kedinasan kenegaraan, pengawalan protokoler kepresidenan, latihan taktis pasukan khusus, dan penyelenggaraan sidang kabinet pemerintahan.",
+    "gallery": [
+      {
+        "id": "gal-01",
+        "title": "Pelantikan Pejabat & Koordinasi Kabinet",
+        "imageUrl": "/assets/gallery/gallery-1.png",
+        "category": "Tata Kelola Kabinet",
+        "description": "Pengawalan agenda pelantikan dan konsolidasi kepemimpinan Kabinet Merah Putih.",
+        "order": 1
+      },
+      {
+        "id": "gal-02",
+        "title": "Dinas Resmi Sekretaris Kabinet RI",
+        "imageUrl": "/assets/gallery/gallery-2.png",
+        "category": "Kedinasan Kenegaraan",
+        "description": "Potret resmi kedinasan dalam menjalankan amanah pimpinan Sekretariat Kabinet.",
+        "order": 2
+      },
+      {
+        "id": "gal-03",
+        "title": "Penyematan US Army Ranger Tab",
+        "imageUrl": "/assets/gallery/gallery-3.png",
+        "category": "Kualifikasi Pasukan Khusus",
+        "description": "Penyematan brevet kualifikasi taktis Ranger School di Fort Benning, Amerika Serikat.",
+        "order": 3
+      },
+      {
+        "id": "gal-04",
+        "title": "Pengawalan Pelantikan Presiden RI",
+        "imageUrl": "/assets/gallery/gallery-4.png",
+        "category": "Protokoler Kepresidenan",
+        "description": "Pengawalan protokoler resmi pengucapan sumpah jabatan Presiden Republik Indonesia.",
+        "order": 4
+      },
+      {
+        "id": "gal-05",
+        "title": "Peninjauan Armada Super Hercules C-130J TNI",
+        "imageUrl": "/assets/gallery/gallery-5.png",
+        "category": "Operasi Pertahanan",
+        "description": "Peninjauan kesiapan alutsista armada transportasi udara strategis pertahanan nasional.",
+        "order": 5
+      },
+      {
+        "id": "gal-06",
+        "title": "Upacara HUT RI Bersama Siswa Sekolah Rakyat",
+        "imageUrl": "/assets/gallery/gallery-6.png",
+        "category": "Pengabdian Kenegaraan",
+        "description": "Interaksi hangat dan pengabdian bersama generasi penerus bangsa pada peringatan HUT RI.",
+        "order": 6
+      }
+    ],
+    "education": [
+      {
+        "id": "edu-01",
+        "period": "2019-2021",
+        "institution": "Universitas Indonesia",
+        "major": "Kajian Terorisme dan Keamanan Internasional",
+        "degree": "Magister Kajian Stratejik dan Global",
+        "order": 1
+      },
+      {
+        "id": "edu-02",
+        "period": "2013-2014",
+        "institution": "Ranger School, Fort Benning, Amerika Serikat",
+        "major": "Kursus Taktik Tempur Infanteri (US Army Ranger Tab)",
+        "degree": "Lulusan Terbaik Internasional",
+        "order": 2
+      },
+      {
+        "id": "edu-03",
+        "period": "2007-2011",
+        "institution": "Akademi Militer (Akmil) Magelang",
+        "major": "Program Studi Manajemen Pertahanan",
+        "degree": "Sarjana Terapan Pertahanan (S.Tr.Han)",
+        "order": 3
+      },
+      {
+        "id": "edu-04",
+        "period": "2004-2007",
+        "institution": "SMA Taruna Nusantara Magelang",
+        "major": "Pendidikan Menengah Berbasis Kepemimpinan",
+        "degree": "Sekolah Menengah Atas",
+        "order": 4
+      }
+    ],
+    "experience": [
+      {
+        "id": "exp-01",
+        "period": "2024-Sekarang",
+        "role": "Sekretaris Kabinet Republik Indonesia",
+        "company": "Sekretariat Kabinet RI",
+        "description": "Memimpin pengelolaan dukungan manajemen kabinet, pengawalan kebijakan prioritas presiden, serta penyelenggaraan sidang kabinet berkala.",
+        "achievements": [
+          "Mengonsolidasikan alur koordinasi lintas kementerian koordinator dan kementerian teknis dalam Kabinet Merah Putih.",
+          "Meningkatkan efisiensi tata laksana rapat kabinet paripurna dan pemantauan tindak lanjut arahan presiden."
+        ],
+        "order": 1
+      },
+      {
+        "id": "exp-02",
+        "period": "2024-2024",
+        "role": "Wakil Komandan Batalyon Infanteri (Wadan Yonif) Para Raider 328/Dirgahayu",
+        "company": "TNI Angkatan Darat",
+        "description": "Bertanggung jawab atas kesiapan operasional prajurit, pembinaan kesatuan tempur, dan tata kelola internal batalyon.",
+        "achievements": [
+          "Memastikan standar operasional kesiapsiagaan cepat satuan tempur lintas udara.",
+          "Mengawasi program latihan taktis matra darat dan pembinaan moril ratusan prajurit Para Raider."
+        ],
+        "order": 2
+      },
+      {
+        "id": "exp-03",
+        "period": "2020-2024",
+        "role": "Ajudan Menteri Pertahanan Republik Indonesia",
+        "company": "Kementerian Pertahanan RI",
+        "description": "Mengatur agenda kedinasan, koordinasi keamanan, serta memfasilitasi komunikasi strategis Menteri Pertahanan Prabowo Subianto.",
+        "achievements": [
+          "Mengoordinasikan agenda kedinasan internasional dan kunjungan diplomasi pertahanan tingkat tinggi.",
+          "Menjaga standar pengamanan serta kelancaran komunikasi lintas lembaga pertahanan dan keamanan."
+        ],
+        "order": 3
+      },
+      {
+        "id": "exp-04",
+        "period": "2014-2019",
+        "role": "Asisten Ajudan Presiden Republik Indonesia",
+        "company": "Sekretariat Militer Presiden (Setmilpres)",
+        "description": "Menyiapkan dan mengoordinasikan dukungan operasional harian, protokoler, serta mobilitas Presiden Joko Widodo.",
+        "achievements": [
+          "Mendampingi kunjungan kerja presiden di seluruh pelosok Indonesia dan perjalanan dinas kenegaraan ke luar negeri.",
+          "Memastikan ketepatan waktu dan keamanan VVIP pada seluruh rangkaian agenda kenegaraan resmi."
+        ],
+        "order": 4
+      },
+      {
+        "id": "exp-05",
+        "period": "2011-2014",
+        "role": "Komandan Pleton (Danton)",
+        "company": "Komando Pasukan Khusus (Kopassus) TNI AD",
+        "description": "Memimpin unit taktis pasukan khusus dalam berbagai operasi pengamanan dan latihan taktis matra darat.",
+        "achievements": [
+          "Memimpin regu operasional dengan disiplin tinggi dalam misi penugasan khusus.",
+          "Meraih kualifikasi komando prajurit Kopassus dengan standar kesiapan tempur tertinggi."
+        ],
+        "order": 5
+      }
+    ],
+    "skills": [
+      {
+        "id": "skill-01",
+        "category": "Strategic Leadership & Command",
+        "tools": ["Komando Satuan Taktis", "Pengambilan Keputusan Cepat", "Kepemimpinan Lapangan", "Manajemen Krisis Kenegaraan"],
+        "description": "Kemampuan memimpin organisasi skala strategis dalam situasi bertekanan tinggi.",
+        "order": 1
+      },
+      {
+        "id": "skill-02",
+        "category": "Protokoler Kepresidenan & Hubungan Antarlembaga",
+        "tools": ["Protokoler VVIP Kenegaraan", "Koordinasi Lintas Kementerian", "Diplomasi Pertahanan", "Tata Kelola Manajemen Sidang"],
+        "description": "Pengalaman mendalam mengelola hubungan kerja antarlembaga negara dan protokoler resmi.",
+        "order": 2
+      },
+      {
+        "id": "skill-03",
+        "category": "Taktik Tempur Infanteri & Kontraterorisme",
+        "tools": ["Operasi Khusus Pasukan Komando", "Taktik Perang Hutan & Kota", "Kualifikasi US Ranger", "Analisis Ancaman Taktis"],
+        "description": "Kualifikasi keahlian tempur infanteri matra darat dengan standar internasional.",
+        "order": 3
+      },
+      {
+        "id": "skill-04",
+        "category": "Manajemen Krisis & Pengamanan VVIP",
+        "tools": ["Pengamanan Kepala Negara", "Evakuasi Cepat Kontinjensi", "Mitigasi Risiko Keamanan", "Standar Operasional VVIP"],
+        "description": "Penerapan protokol pengamanan menyeluruh bagi pejabat tinggi negara dalam berbagai medan.",
+        "order": 4
+      },
+      {
+        "id": "skill-05",
+        "category": "Administrasi Pemerintahan & Kebijakan Publik",
+        "tools": ["Pengawalan Arahan Presiden", "Penyusunan Agenda Sidang Kabinet", "Koordinasi Dokumen Strategis", "Tata Kelola Birokrasi Efektif"],
+        "description": "Tata kelola administratif modern untuk memastikan kebijakan prioritas nasional terlaksana.",
+        "order": 5
+      },
+      {
+        "id": "skill-06",
+        "category": "Operasi Lintas Udara (Airborne Operations)",
+        "tools": ["Jumpmaster Operations", "Taktik Penerjunan Statik & Terjun Bebas", "Infiltrasi Linud Para Raider", "Navigasi Darat & Udara"],
+        "description": "Kualifikasi penerjunan militer taktis dan pengorganisasian operasi lintas udara.",
+        "order": 6
+      }
+    ],
+    "languages": [
+      {
+        "id": "lang-01",
+        "language": "Indonesia",
+        "proficiency": "Fasih (Penutur Asli / Bahasa Resmi Kenegaraan)",
+        "order": 1
+      },
+      {
+        "id": "lang-02",
+        "language": "Inggris",
+        "proficiency": "Profesional (Komunikasi Diplomatik & Kursus Militer Internasional)",
+        "order": 2
+      }
+    ],
+    "awards": [
+      {
+        "id": "award-01",
+        "year": "2014",
+        "title": "Lulusan Internasional Terbaik Ranger School",
+        "institution": "US Army Infantry School, Fort Benning, Amerika Serikat",
+        "description": "Penghargaan atas prestasi akademik, fisik, dan kepemimpinan taktis selama pendidikan kualifikasi Ranger.",
+        "order": 1
+      },
+      {
+        "id": "award-02",
+        "year": "2019",
+        "title": "Satyalancana Wira Karya atas Pengabdian Pengawalan Kepresidenan RI",
+        "institution": "Presiden Republik Indonesia",
+        "description": "Tanda kehormatan kenegaraan atas dedikasi dan kesetiaan mendampingi kepala negara.",
+        "order": 2
+      },
+      {
+        "id": "award-03",
+        "year": "2024",
+        "title": "Satyalancana Kesetiaan XVI Tahun Dedikasi Militer",
+        "institution": "Kementerian Pertahanan Republik Indonesia",
+        "description": "Penghargaan kesetiaan pengabdian tanpa cacat sebagai prajurit TNI Angkatan Darat.",
+        "order": 3
+      }
+    ],
+    "certificates": [
+      {
+        "id": "cert-01",
+        "title": "US Army Ranger Tab Qualification",
+        "issuer": "US Army Infantry School, Fort Benning",
+        "year": "2014",
+        "imageUrl": "/assets/certificates/certificate-1.png",
+        "credentialUrl": "https://www.army.mil",
+        "order": 1
+      },
+      {
+        "id": "cert-02",
+        "title": "Brevet Kualifikasi Komando Pasukan Khusus",
+        "issuer": "Komando Pasukan Khusus (Kopassus) TNI AD",
+        "year": "2012",
+        "imageUrl": "/assets/certificates/certificate-2.png",
+        "order": 2
+      },
+      {
+        "id": "cert-03",
+        "title": "US Army Airborne Course & Jumpmaster Badge",
+        "issuer": "US Army Airborne School",
+        "year": "2014",
+        "imageUrl": "/assets/certificates/certificate-3.png",
+        "order": 3
+      },
+      {
+        "id": "cert-04",
+        "title": "Brevet Kualifikasi Para Raider",
+        "issuer": "Pusat Kesenjataan Infanteri TNI AD",
+        "year": "2015",
+        "imageUrl": "/assets/certificates/certificate-1.png",
+        "order": 4
+      },
+      {
+        "id": "cert-05",
+        "title": "Kualifikasi Terjun Bebas Militer (Military Free Fall)",
+        "issuer": "Pusdiklatpassus Kopassus Batujajar",
+        "year": "2016",
+        "imageUrl": "/assets/certificates/certificate-2.png",
+        "order": 5
+      },
+      {
+        "id": "cert-06",
+        "title": "Sertifikasi Pengawalan VVIP & Protokoler Kepresidenan",
+        "issuer": "Sekretariat Militer Presiden & Paspampres",
+        "year": "2018",
+        "imageUrl": "/assets/certificates/certificate-3.png",
+        "order": 6
+      },
+      {
+        "id": "cert-07",
+        "title": "Kursus Lanjutan Perwira Infanteri (Diklapa I)",
+        "issuer": "Pusdikif Kodiklat TNI AD",
+        "year": "2017",
+        "imageUrl": "/assets/certificates/certificate-1.png",
+        "order": 7
+      },
+      {
+        "id": "cert-08",
+        "title": "Pathfinder Course Qualification",
+        "issuer": "US Army Infantry Center",
+        "year": "2014",
+        "imageUrl": "/assets/certificates/certificate-2.png",
+        "order": 8
+      },
+      {
+        "id": "cert-09",
+        "title": "Kajian Stratejik Kontraterorisme & Intelijen",
+        "issuer": "Universitas Indonesia",
+        "year": "2021",
+        "imageUrl": "/assets/certificates/certificate-3.png",
+        "order": 9
+      },
+      {
+        "id": "cert-10",
+        "title": "Tata Kelola Manajemen Kabinet & Pemerintahan",
+        "issuer": "Sekretariat Kabinet Republik Indonesia",
+        "year": "2024",
+        "imageUrl": "/assets/certificates/certificate-1.png",
+        "order": 10
+      }
+    ],
+    "contact": {
+      "whatsapp": "081234567890",
+      "email": "setkab@setkab.go.id",
+      "location": "DKI Jakarta, Indonesia",
+      "note": "Kanal komunikasi resmi Sekretariat Kabinet Republik Indonesia untuk koordinasi antarlembaga dan kedinasan.",
+      "socials": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/tedsky89",
+          "label": "Instagram",
+          "handle": "@tedsky89"
+        }
+      ]
+    },
+    "footerCopyright": "© 2026 Teddy Indra Wijaya. Seluruh Hak Cipta Dilindungi.",
+    "footerSummary": "Pengabdian pada tata kelola manajemen kabinet pemerintahan, kepemimpinan taktis strategis, serta dedikasi penuh bagi bangsa dan negara.",
+    "navbarStatus": "Kabinet Merah Putih",
+    "navbarCtaText": "Hubungi",
+    "heroPrimaryCtaText": "Lihat Rekam Jejak",
+    "heroSecondaryCtaText": "Dokumentasi Dinas"
+  },
+  "config": {
+    "theme": "dark",
+    "accentColor": "#FF2A00",
+    "accentColorGlow": "rgba(255, 42, 0, 0.25)",
+    "showNavbarPhoto": true,
+    "showGalleryDescription": true
+  }
+}

@@ -1,0 +1,436 @@
+/* ==========================================================================
+   HERO SECTION - CLEAN MODERN MINIMALIST (STRICT CENTER ALIGNED)
+   Sesuai urutan-yang-benar.txt:
+   - PP (Foto Profil)
+   - Hai, Saya
+   - Nama Pengguna (Center)
+   - Pekerjaan • Lokasi (Center)
+   - Quotes (Center)
+   - Tombol Hubungi Saya & Lihat Galeri (Center)
+   - Grid 3 Kolom: Total Sertifikat | Umur Saat Ini | Keahlian Dikuasai
+   - Kartu Mandiri: Followers Instagram
+   ========================================================================== */
+
+.hero-section {
+  padding-top: clamp(2.5rem, 6vw, 5rem);
+  padding-bottom: clamp(3.5rem, 7vw, 6rem);
+  background-color: var(--color-bg);
+  position: relative;
+}
+
+/* Center Layout Wrapper */
+.hero-wrapper.hero-center-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Foto Profil (PP) */
+.hero-avatar-block {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-avatar-frame {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  padding: 4px;
+  background-color: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-avatar-frame:hover {
+  transform: scale(1.04);
+  border-color: var(--color-accent);
+}
+
+.hero-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-avatar-status-dot {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #10B981;
+  border: 2px solid var(--color-surface);
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+/* 1. Baris Salam & Status Tag */
+.hero-intro-row.hero-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.hero-greeting-pill {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  background-color: var(--color-accent-subtle);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 59, 29, 0.15);
+}
+
+.hero-status-tag {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+/* 2. Headline Nama Besar & Bersih */
+.hero-headline-block {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.hero-name-display {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 7vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  color: var(--color-text);
+  margin: 0;
+  text-align: center;
+}
+
+/* 3. Subline: Peran & Lokasi */
+.hero-subline-row.hero-row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.subline-role {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.subline-dot {
+  color: var(--color-accent);
+  font-size: 1.1rem;
+}
+
+.subline-location {
+  font-family: var(--font-body);
+  font-size: clamp(0.9375rem, 1.4vw, 1.0625rem);
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+/* 4. Quote Box */
+.hero-quote-box.hero-quote-center {
+  margin: 0 auto 36px auto;
+  max-width: 680px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.hero-quote-text {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+}
+
+/* 5. CTAs Group */
+.hero-cta-group.hero-cta-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+/* 6. Grid 3 Metrik Utama (Total Sertifikat, Umur, Keahlian) */
+.hero-core-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.metric-clean-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  transition: all 0.25s ease;
+}
+
+.metric-clean-card:hover {
+  border-color: var(--color-border-hover);
+  background-color: var(--color-surface-hover);
+  transform: translateY(-2px);
+}
+
+.metric-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.metric-card-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.metric-card-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.metric-card-value {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 6px;
+}
+
+.metric-number-big {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+}
+
+.metric-symbol-accent {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.metric-unit-text {
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-left: 4px;
+}
+
+.metric-card-caption {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+/* 7. Kartu Mandiri Followers Instagram */
+.hero-instagram-card-wrapper {
+  width: 100%;
+}
+
+.hero-instagram-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 18px 24px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  gap: 16px;
+}
+
+.hero-instagram-card:hover {
+  border-color: rgba(255, 59, 29, 0.4);
+  background-color: var(--color-surface-hover);
+  transform: translateY(-2px);
+}
+
+.ig-card-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+}
+
+.ig-icon-container {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, rgba(255, 59, 29, 0.12) 0%, rgba(225, 48, 108, 0.12) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  border: 1px solid rgba(255, 59, 29, 0.2);
+  flex-shrink: 0;
+}
+
+.ig-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ig-identity-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ig-handle-name {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.ig-badge {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: var(--color-surface-variant);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+}
+
+.ig-label-sub {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.ig-card-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ig-metric-count {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.ig-count-number {
+  font-family: var(--font-display);
+  font-size: clamp(1.375rem, 2.2vw, 1.75rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+
+.ig-count-plus {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.ig-metric-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+
+.ig-arrow-icon {
+  color: var(--color-text-muted);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.hero-instagram-card:hover .ig-arrow-icon {
+  color: var(--color-accent);
+  transform: translate(2px, -2px);
+}
+
+/* ==========================================================================
+   RESPONSIVE MOBILE BREAKPOINTS (375px - 768px)
+   ========================================================================== */
+
+@media (max-width: 840px) {
+  .hero-core-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .hero-instagram-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .ig-card-right {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid var(--color-border);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-cta-group.hero-cta-center {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn-swiss {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-quote-box.hero-quote-center {
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "template": "template-portofolio11",
+  "edition": "Neue Grid Vanguard",
+  "exportedAt": "2026-11-07T01:25:00.000Z",
+  "content": {
+    "personal": {
+      "name": "Joselin Stefani",
+      "role": "Mahasiswa / Freelance Japanese Translator & Private Language Tutor",
+      "location": "Jawa Barat, Indonesia",
+      "quote": "継続は力なり (Keizoku wa chikara nari) : Konsistensi dan ketekunan adalah jembatan terbaik dalam memahami bahasa, budaya, dan peluang global.",
+      "avatarUrl": "/assets/profile/profile.png",
+      "whatsapp": "081234567890",
+      "email": "joselin.stefani@email.com",
+      "birthDate": "15/08/2004",
+      "bioSummary": "Mahasiswa aktif Pendidikan Bahasa & Sastra Jepang di Universitas Pendidikan Indonesia (UPI) yang berdedikasi tinggi, komunikatif, dan memiliki ketertarikan mendalam pada linguistik, penerjemahan, serta hubungan bisnis lintas budaya (Indonesia-Jepang). Memiliki kemampuan komunikasi bahasa Jepang tingkat menengah atas (setara JLPT N2) dan aktif dalam berbagai kegiatan akademik, kepanitiaan festival budaya, serta program pertukaran dan asistensi pengajaran bahasa. Terbiasa bekerja secara adaptif, terstruktur, dan siap berkontribusi profesional di bidang pendidikan, penerjemahan, maupun industri multinasional.",
+      "statusText": "Mahasiswa & Japanese Translator"
+    },
+    "metrics": {
+      "totalCertificates": 5,
+      "birthDateForAge": "2004-08-15",
+      "totalSkillsCount": 24,
+      "instagramFollowers": "8.5K"
+    },
+    "galleryDescription": "Dokumentasi aktivitas akademik di Universitas Pendidikan Indonesia (UPI), pemaparan materi pidato bahasa Jepang, serta partisipasi dalam festival kebudayaan Bunkasai.",
+    "gallery": [
+      {
+        "id": "gal-01",
+        "title": "Pemaparan Materi & Pidato Bahasa Jepang",
+        "imageUrl": "/assets/gallery/gallery-1.png",
+        "category": "Prestasi Akademik",
+        "description": "Penyampaian pidato dan pemaparan studi linguistik bahasa Jepang di ruang seminar Universitas Pendidikan Indonesia.",
+        "order": 1
+      },
+      {
+        "id": "gal-02",
+        "title": "Aktivitas Perkuliahan & Studi Literatur",
+        "imageUrl": "/assets/gallery/gallery-2.png",
+        "category": "Akademik Kampus",
+        "description": "Sesi pembelajaran tata bahasa, penulisan kanji, dan analisis literatur sastra Jepang di kelas.",
+        "order": 2
+      },
+      {
+        "id": "gal-03",
+        "title": "Festival Kebudayaan Jepang Bunkasai UPI",
+        "imageUrl": "/assets/gallery/gallery-3.png",
+        "category": "Festival Budaya",
+        "description": "Partisipasi aktif kepanitiaan festival kebudayaan Jepang (Bunkasai) UPI mengenakan pakaian tradisional Yukata.",
+        "order": 3
+      }
+    ],
+    "education": [
+      {
+        "id": "edu-01",
+        "period": "2022-2026",
+        "institution": "Universitas Pendidikan Indonesia (UPI)",
+        "major": "Jurusan Pendidikan Bahasa Jepang",
+        "degree": "Sarjana Pendidikan (S.Pd) - Mahasiswa Aktif",
+        "order": 1
+      },
+      {
+        "id": "edu-02",
+        "period": "2019-2022",
+        "institution": "SMAN 03 Bandung",
+        "major": "Jurusan IPS",
+        "degree": "Sekolah Menengah Atas",
+        "order": 2
+      },
+      {
+        "id": "edu-03",
+        "period": "2016-2019",
+        "institution": "SMPN 02 Bandung",
+        "major": "Pendidikan Menengah Pertama",
+        "degree": "Sekolah Menengah Pertama",
+        "order": 3
+      },
+      {
+        "id": "edu-04",
+        "period": "2010-2016",
+        "institution": "SDN 03 Bandung",
+        "major": "Pendidikan Dasar",
+        "degree": "Sekolah Dasar",
+        "order": 4
+      }
+    ],
+    "experience": [
+      {
+        "id": "exp-01",
+        "period": "2025-2026",
+        "role": "Liaison Officer & Event Coordinator",
+        "company": "Festival Budaya Jepang (Bunkasai) UPI",
+        "description": "Mengoordinasikan komunikasi langsung dengan penutur asli (native speaker) dan bintang tamu, serta mengelola jalannya perlombaan pidato bahasa Jepang tingkat nasional.",
+        "achievements": [
+          "Mengoordinasikan alur komunikasi bilateral antara pihak panitia pelaksana dengan penutur asli bahasa Jepang.",
+          "Mengelola registrasi dan jadwal penampilan peserta lomba pidato bahasa Jepang tingkat universitas."
+        ],
+        "order": 1
+      },
+      {
+        "id": "exp-02",
+        "period": "2025-2026",
+        "role": "Freelance Japanese-Indonesian Translator",
+        "company": "Studio Kreatif Nusantara",
+        "description": "Menerjemahkan dokumen bisnis, artikel web, serta takarir (subtitling) konten multimedia dari bahasa Jepang ke bahasa Indonesia dengan akurasi konteks budaya yang tepat.",
+        "achievements": [
+          "Menerjemahkan artikel web dan naskah presentasi bisnis dengan penyesuaian nuansa bahasa kontekstual.",
+          "Menyelesaikan proyek subtitling video promosi kreatif dan modul digital berbahasa Jepang secara presisi."
+        ],
+        "order": 2
+      },
+      {
+        "id": "exp-03",
+        "period": "2024-2025",
+        "role": "Japanese Language Tutor",
+        "company": "Lembaga Bahasa Mandiri Bandung",
+        "description": "Mengajar tata bahasa, kanji, dan percakapan dasar hingga persiapan JLPT N5-N4 bagi siswa SMA dan kalangan umum secara interaktif.",
+        "achievements": [
+          "Membimbing puluhan peserta didik menguasai dasar huruf Hiragana, Katakana, dan Kanji level pemula.",
+          "Merancang modul latihan dan simulasi ujian JLPT N5-N4 dengan metode pemahaman kontekstual."
+        ],
+        "order": 3
+      }
+    ],
+    "skills": [
+      {
+        "id": "skill-01",
+        "category": "Japanese Interpretation & Translation",
+        "tools": [
+          "JLPT N2 Preparation",
+          "Business Documents",
+          "Subtitling Multimedia",
+          "Oral Interpretation"
+        ],
+        "description": "Penerjemahan teks tertulis dan interpretasi lisan bahasa Jepang-Indonesia secara kontekstual.",
+        "order": 1
+      },
+      {
+        "id": "skill-02",
+        "category": "Curriculum & Lesson Planning",
+        "tools": [
+          "Silabus Pembelajaran",
+          "Studi Kanji Terstruktur",
+          "Metode Interaktif",
+          "Modul JLPT N5-N4"
+        ],
+        "description": "Penyusunan kurikulum dan rancangan pembelajaran bahasa Jepang yang sistematis dan mudah dipahami.",
+        "order": 2
+      },
+      {
+        "id": "skill-03",
+        "category": "Cross-Cultural Communication",
+        "tools": [
+          "Etika Bisnis Jepang",
+          "Komunikasi Lintas Budaya",
+          "Fasilitasi Native Speaker",
+          "Adaptasi Budaya"
+        ],
+        "description": "Menjembatani pemahaman dan harmonisasi komunikasi dalam konteks hubungan bisnis Indonesia-Jepang.",
+        "order": 3
+      },
+      {
+        "id": "skill-04",
+        "category": "Public Speaking & MC",
+        "tools": [
+          "Master of Ceremony",
+          "Moderator Acara",
+          "Presentasi Bilingual",
+          "Manajemen Panggung"
+        ],
+        "description": "Keterampilan memandu acara resmi festival budaya Jepang dan perlombaan tingkat regional.",
+        "order": 4
+      },
+      {
+        "id": "skill-05",
+        "category": "Content Creation & Desain Grafis",
+        "tools": [
+          "Canva",
+          "Adobe Illustrator",
+          "Desain Poster Acara",
+          "Tipografi Kreatif"
+        ],
+        "description": "Pembuatan media visual kreatif dan materi promosi acara dengan estetika komunikatif.",
+        "order": 5
+      },
+      {
+        "id": "skill-06",
+        "category": "Office & Administrative Support",
+        "tools": [
+          "Google Workspace",
+          "Microsoft Office",
+          "Google Docs & Sheets",
+          "Korespondensi Email"
+        ],
+        "description": "Pengelolaan administrasi dokumen, lembar kerja, serta koordinasi operasional kegiatan terstruktur.",
+        "order": 6
+      }
+    ],
+    "languages": [
+      {
+        "id": "lang-01",
+        "language": "Indonesia",
+        "proficiency": "Penutur Asli",
+        "order": 1
+      },
+      {
+        "id": "lang-02",
+        "language": "Jepang",
+        "proficiency": "Tingkat Mahir / Setara JLPT N2",
+        "order": 2
+      },
+      {
+        "id": "lang-03",
+        "language": "Inggris",
+        "proficiency": "Tingkat Menengah / B2",
+        "order": 3
+      }
+    ],
+    "awards": [
+      {
+        "id": "award-01",
+        "year": "2025",
+        "title": "Juara 2 Japanese Speech Contest Tingkat Universitas Se-Jawa Barat",
+        "institution": "Asosiasi Pendidikan Bahasa Jepang & Bunkasai UPI",
+        "description": "Penghargaan prestasi pidato bahasa Jepang bertema komunikasi lintas budaya dan linguistik kontekstual.",
+        "order": 1
+      },
+      {
+        "id": "award-02",
+        "year": "2024",
+        "title": "Apresiasi Fasilitator Terbaik Program Pertukaran Budaya Indonesia-Jepang",
+        "institution": "Universitas Pendidikan Indonesia (UPI)",
+        "description": "Penghargaan atas kontribusi aktif memfasilitasi komunikasi bilingual mahasiswa Indonesia dan penutur asli Jepang.",
+        "order": 2
+      }
+    ],
+    "certificates": [
+      {
+        "id": "cert-01",
+        "title": "Japanese Language Proficiency Test (JLPT N2)",
+        "issuer": "The Japan Foundation & JEES",
+        "year": "2025",
+        "imageUrl": "/assets/certificates/certificate-1.png",
+        "credentialUrl": "https://www.jlpt.jp",
+        "order": 1
+      },
+      {
+        "id": "cert-02",
+        "title": "Japanese Language Proficiency Test (JLPT N3)",
+        "issuer": "The Japan Foundation & JEES",
+        "year": "2024",
+        "imageUrl": "/assets/certificates/certificate-2.png",
+        "credentialUrl": "https://www.jlpt.jp",
+        "order": 2
+      },
+      {
+        "id": "cert-03",
+        "title": "Japanese Cultural Exchange & Workshop Program",
+        "issuer": "Universitas Pendidikan Indonesia (UPI)",
+        "year": "2025",
+        "imageUrl": "/assets/certificates/certificate-3.png",
+        "order": 3
+      }
+    ],
+    "contact": {
+      "whatsapp": "081234567890",
+      "email": "joselin.stefani@email.com",
+      "location": "Jawa Barat, Indonesia",
+      "note": "Kanal komunikasi resmi untuk layanan tutor privat bahasa Jepang, penerjemahan dokumen, dan kolaborasi festival budaya.",
+      "socials": [
+        {
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/in/joselinstefani",
+          "label": "LinkedIn",
+          "handle": "Joselin Stefani"
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/joselinstefani",
+          "label": "Instagram",
+          "handle": "@joselinstefani"
+        },
+        {
+          "platform": "tiktok",
+          "url": "https://www.tiktok.com/@joselinstefani.jp",
+          "label": "TikTok",
+          "handle": "@joselinstefani.jp"
+        }
+      ]
+    },
+    "footerCopyright": "© 2026 Joselin Stefani. Seluruh Hak Cipta Dilindungi.",
+    "footerSummary": "Mahasiswa Pendidikan Bahasa Jepang UPI, tutor privat bahasa, serta penerjemah lepas dengan dedikasi tinggi pada pemahaman bahasa dan budaya.",
+    "navbarStatus": "Pendidikan Bahasa Jepang UPI",
+    "navbarCtaText": "Hubungi",
+    "heroPrimaryCtaText": "Hubungi Saya",
+    "heroSecondaryCtaText": "Lihat Galeri"
+  }
+}

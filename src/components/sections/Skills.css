@@ -1,0 +1,246 @@
+/* ==========================================================================
+   KEAHLIAN DIKUASAI: SWISS KINETIC MINIMALIST (SECTION 6)
+   Brand: bikin.portofoliomu | Maximized Accent: Swiss Signal Vermilion (#FF2A00)
+   ========================================================================== */
+
+.skills-section {
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-card-border);
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* Header Row */
+.skills-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skills-title {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+.skills-meta-count {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+/* 3-Kolom Swiss Modular Grid */
+.skills-grid-modular {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Skill Card */
+.skill-card-item {
+  position: relative;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-md, 6px);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: hidden;
+  outline: none;
+  cursor: default;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.skill-card-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+  box-shadow: 0 12px 28px rgba(255, 42, 0, 0.09);
+}
+
+.skill-card-item:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Corner Accent Indicator */
+.skill-corner-accent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, transparent 50%, var(--color-accent) 50%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.skill-card-item:hover .skill-corner-accent,
+.skill-card-item:focus-visible .skill-corner-accent {
+  opacity: 1;
+}
+
+/* Card Top: Index & Badge */
+.skill-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-idx-badge {
+  font-family: var(--font-mono);
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  letter-spacing: -0.02em;
+}
+
+.skill-sparkle-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm, 4px);
+  background-color: var(--color-card-border);
+  text-transform: uppercase;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.sparkle-icon {
+  color: var(--color-accent);
+}
+
+.skill-card-item:hover .skill-sparkle-pill {
+  color: var(--color-accent);
+  background-color: rgba(255, 42, 0, 0.08);
+}
+
+/* Title Block */
+.skill-title-block {
+  margin-top: 4px;
+}
+
+.skill-category-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-text);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* Description Text */
+.skill-description-text {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Tools Sub-block */
+.skill-tools-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--color-card-border);
+}
+
+.tools-label-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tools-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.tools-header-text {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tools-pills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tool-tag-pill {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text);
+  background-color: var(--color-card-border);
+  border: 1px solid transparent;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm, 4px);
+  transition: all 0.2s ease;
+}
+
+.skill-card-item:hover .tool-tag-pill {
+  border-color: rgba(255, 42, 0, 0.25);
+}
+
+.tool-tag-pill:hover {
+  background-color: var(--color-accent) !important;
+  color: #FFFFFF !important;
+  border-color: var(--color-accent) !important;
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS (SWISS GRID REFLECTION)
+   ========================================================================== */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .skills-grid-modular {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (max-width: 640px) */
+@media (max-width: 640px) {
+  .skills-grid-modular {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card-item {
+    padding: 22px 18px;
+  }
+
+  .skill-category-title {
+    font-size: 1.125rem;
+  }
+}

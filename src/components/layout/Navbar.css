@@ -1,0 +1,343 @@
+/* ==========================================================================
+   NAVBAR: MODERN MINIMALIST (CLEAN & SIMPLE)
+   Brand: bikin.portofoliomu | Dial: ENERGY 1 / RHYTHM 2 / MOTION 1
+   ========================================================================== */
+
+.swiss-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-card-border);
+  transition: background-color 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.swiss-navbar.is-scrolled {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme='dark'] .swiss-navbar.is-scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.navbar-grid-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  width: 100%;
+  gap: 20px;
+}
+
+/* ==========================================================================
+   1. BRANDING / IDENTITAS (SISI KIRI)
+   ========================================================================== */
+
+.navbar-brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--color-text);
+  min-height: 44px;
+}
+
+.brand-avatar-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--color-card-border);
+  background-color: var(--color-card-bg);
+  flex-shrink: 0;
+}
+
+.brand-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-monogram-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.brand-text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.brand-title-name {
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.brand-meta-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.live-status-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #10B981;
+}
+
+.brand-status-label {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   2. MENU NAVIGASI (TENGAH)
+   ========================================================================== */
+
+.navbar-nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list-cell {
+  display: flex;
+}
+
+.nav-action-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  min-height: 44px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-action-link:hover {
+  color: var(--color-accent);
+}
+
+.nav-action-link::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.2s ease;
+}
+
+.nav-action-link:hover::after {
+  width: 100%;
+}
+
+/* ==========================================================================
+   3. KONTROL KANAN (THEME TOGGLE + CTA + MOBILE HAMBURGER)
+   ========================================================================== */
+
+.navbar-control-cluster {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  border: 1px solid var(--color-card-border);
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.theme-switch-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.navbar-quick-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 38px;
+  padding: 0 16px;
+  border-radius: 4px;
+  background-color: var(--color-accent);
+  color: #FFFFFF !important;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbar-quick-cta:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.mobile-toggle-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: 1px solid var(--color-card-border);
+  border-radius: 6px;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   DRAWER MOBILE & RESPONSIVE
+   ========================================================================== */
+
+.mobile-nav-panel {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  .navbar-nav-menu,
+  .navbar-quick-cta {
+    display: none;
+  }
+
+  .mobile-toggle-btn {
+    display: inline-flex;
+  }
+
+  .mobile-nav-panel {
+    display: block;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-card-border);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.2s ease;
+  }
+
+  .mobile-nav-panel.panel-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobile-panel-body {
+    padding: 24px 20px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mobile-status-strip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-card-border);
+    border-radius: 4px;
+  }
+
+  .strip-text-info {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+
+  .mobile-links-stack {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--color-card-border);
+  }
+
+  .mobile-link-entry {
+    border-bottom: 1px solid var(--color-card-border);
+  }
+
+  .mobile-drawer-anchor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 700;
+    min-height: 48px;
+  }
+
+  .drawer-arrow {
+    color: var(--color-accent);
+  }
+
+  .mobile-full-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+    background-color: var(--color-accent);
+    color: #FFFFFF !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+}

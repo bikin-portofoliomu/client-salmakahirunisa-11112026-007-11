@@ -1,0 +1,130 @@
+/* ==========================================================================
+   GRID & EDITORIAL UTILITIES: MODERN MINIMALIST (CLEAN & SIMPLE)
+   ========================================================================== */
+
+/* Kontainer Utama */
+.swiss-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (max-width: 640px) {
+  .swiss-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* Pembungkus Section Lapang & Bernapas */
+.swiss-section {
+  position: relative;
+  width: 100%;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+@media (max-width: 768px) {
+  .swiss-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+/* Header Section Minimalis Rata Tengah (Center Aligned) */
+.swiss-section-header {
+  text-align: center;
+  margin: 0 auto 48px auto;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-meta-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.section-editorial-num {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  margin-right: 6px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.375rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.section-lead-text {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  max-width: 640px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tombol Aksi Minimalis (Touch Target >= 44px, R-03) */
+.btn-swiss {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 22px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm, 6px);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-swiss-solid {
+  background-color: var(--color-accent);
+  color: #FFFFFF !important;
+  border: 1px solid var(--color-accent);
+}
+
+.btn-swiss-solid:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 59, 29, 0.2);
+}
+
+.btn-swiss-outline {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-card-border);
+}
+
+.btn-swiss-outline:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateY(-1px);
+}

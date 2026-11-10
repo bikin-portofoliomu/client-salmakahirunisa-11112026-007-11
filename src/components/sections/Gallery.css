@@ -1,0 +1,287 @@
+/* ==========================================================================
+   GALERI SAYA: SWISS KINETIC MINIMALIST (SECTION 3)
+   Brand: bikin.portofoliomu | Maximized Accent: Swiss Signal Vermilion (#FF2A00)
+   ========================================================================== */
+
+.gallery-section {
+  background-color: var(--color-bg);
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* Header Row */
+.gallery-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gallery-title {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+.gallery-meta-count {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.meta-count-num {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-accent);
+  letter-spacing: -0.04em;
+}
+
+.meta-count-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+}
+
+/* ==========================================================================
+   GRID 6 FOTO EDITORIAL (2 BARIS X 3 KOLOM)
+   ========================================================================== */
+.gallery-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.gallery-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  outline: none;
+  transition: border-color var(--duration-normal) var(--ease-swiss),
+              transform var(--duration-normal) var(--ease-swiss),
+              box-shadow var(--duration-normal) var(--ease-swiss);
+}
+
+.gallery-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+.gallery-card:focus-visible {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+.gallery-image-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background-color: var(--color-surface-subtle);
+  overflow: hidden;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  transition: transform var(--duration-slow) var(--ease-swiss);
+}
+
+.gallery-card:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+/* Graphic Placeholder jika file gambar lokal belum diletakkan */
+.gallery-placeholder-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--color-surface-subtle) 0%, var(--color-surface) 100%);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.placeholder-num {
+  font-family: var(--font-display);
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  opacity: 0.35;
+  letter-spacing: -0.04em;
+}
+
+.placeholder-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Hover Overlay */
+.gallery-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 12, 0.4);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--duration-fast) var(--ease-swiss);
+}
+
+.gallery-card:hover .gallery-hover-overlay {
+  opacity: 1;
+}
+
+.hover-action-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: var(--color-accent);
+  color: var(--color-accent-contrast);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border-radius: var(--radius-sm);
+  transform: translateY(6px);
+  transition: transform var(--duration-fast) var(--ease-swiss);
+}
+
+.gallery-card:hover .hover-action-pill {
+  transform: translateY(0);
+}
+
+/* Card Info Bar */
+.gallery-info-bar {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gallery-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gallery-idx-badge {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.gallery-category-pill {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+}
+
+.gallery-card-heading {
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+/* ==========================================================================
+   DESKRIPSI EDITORIAL GALERI (OPSIONAL)
+   ========================================================================== */
+.gallery-editorial-description {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  margin-top: 8px;
+}
+
+.description-accent-line {
+  width: 3px;
+  height: 24px;
+  background-color: var(--color-accent);
+  border-radius: var(--radius-xs);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.description-text-lead {
+  font-family: var(--font-body);
+  font-size: clamp(0.9375rem, 1.4vw, 1.0625rem);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS (REFLOW)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .gallery-grid-6 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-grid-6 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .gallery-header-row {
+    align-items: flex-start;
+  }
+
+  .gallery-meta-count {
+    align-items: flex-start;
+  }
+
+  .gallery-editorial-description {
+    padding: 18px 16px;
+  }
+}

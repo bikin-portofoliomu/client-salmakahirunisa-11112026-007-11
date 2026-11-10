@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Swiss Vanguard Minimalist Monogram Favicon -->
+  <rect width="64" height="64" rx="10" fill="#0A0A0C"/>
+  <rect x="4" y="4" width="56" height="56" rx="8" stroke="#1F2024" stroke-width="1.5"/>
+  <!-- Swiss Signal Vermilion Accent Block -->
+  <rect x="14" y="14" width="36" height="36" fill="#FF2A00"/>
+  <!-- Precise Cross Cutout in Pure White -->
+  <path d="M28 19H36V28H45V36H36V45H28V36H19V28H28V19Z" fill="#FFFFFF"/>
+</svg>

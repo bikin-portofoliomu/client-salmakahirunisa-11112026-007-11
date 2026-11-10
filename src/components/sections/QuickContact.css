@@ -1,0 +1,374 @@
+/* ==========================================================================
+   QUICK CONTACT BAR: SWISS KINETIC MINIMALIST (SECTION 9)
+   Brand: bikin.portofoliomu | Maximized Accent: Swiss Signal Vermilion (#FF2A00)
+   ========================================================================== */
+
+.quick-contact-section {
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-card-border);
+}
+
+.quick-contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* Header Row */
+.quick-contact-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.quick-contact-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quick-contact-title {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+/* Quick Action Buttons Center Wrapper */
+.quick-contact-actions-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+  width: 100%;
+}
+
+.quick-action-buttons-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-quick-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 24px;
+  background-color: var(--color-accent);
+  color: #FFFFFF !important;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-sm, 4px);
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(255, 42, 0, 0.25);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.25s ease,
+              background-color 0.2s ease;
+}
+
+.btn-quick-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 42, 0, 0.4);
+}
+
+.btn-quick-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 22px;
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-sm, 4px);
+  text-decoration: none;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease,
+              color 0.2s ease,
+              box-shadow 0.25s ease;
+}
+
+.btn-quick-secondary:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* ==========================================================================
+   GRID 3 KARTU INFORMASI KONTAK (NOMOR WA, EMAIL, DOMISILI)
+   ========================================================================== */
+
+.contact-info-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.contact-info-card {
+  position: relative;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-md, 6px);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+  box-shadow: 0 10px 28px rgba(255, 42, 0, 0.08);
+}
+
+.info-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm, 4px);
+  background-color: rgba(255, 42, 0, 0.08);
+  color: var(--color-accent);
+}
+
+.info-idx-num {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  letter-spacing: -0.02em;
+}
+
+.info-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+.info-card-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.info-card-value-link {
+  font-family: var(--font-display);
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  word-break: break-all;
+  transition: color 0.2s ease;
+}
+
+.info-card-value-link:hover {
+  color: var(--color-accent);
+}
+
+.info-card-value-text {
+  font-family: var(--font-display);
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.info-card-footer {
+  display: flex;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px dashed var(--color-card-border);
+}
+
+.copy-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  padding: 4px 0;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.copy-action-btn:hover {
+  color: var(--color-accent);
+}
+
+.copy-success-icon {
+  color: #10B981;
+}
+
+.status-live-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 0.06em;
+}
+
+/* ==========================================================================
+   BAGIAN LINK APP (SOSIAL MEDIA)
+   ========================================================================== */
+
+.social-links-dossier-block {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px 28px;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-md, 6px);
+}
+
+.social-dossier-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-label-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.social-cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.social-app-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-sm, 4px);
+  text-decoration: none;
+  color: var(--color-text);
+  min-height: 48px;
+  transition: all 0.2s ease;
+}
+
+.social-app-card:hover {
+  border-color: var(--color-accent);
+  background-color: rgba(255, 42, 0, 0.04);
+  transform: translateX(3px);
+}
+
+.social-app-icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.social-app-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.social-platform-name {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.social-handle-text {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.social-arrow-icon {
+  color: var(--color-text-muted);
+  transition: transform 0.2s ease, color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.social-app-card:hover .social-arrow-icon {
+  transform: translate(2px, -2px);
+  color: var(--color-accent);
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS (SWISS GRID REFLECTION)
+   ========================================================================== */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .contact-info-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social-cards-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile (max-width: 640px) */
+@media (max-width: 640px) {
+  .quick-action-buttons-wrap {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn-quick-primary,
+  .btn-quick-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-info-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .social-links-dossier-block {
+    padding: 20px 16px;
+  }
+}

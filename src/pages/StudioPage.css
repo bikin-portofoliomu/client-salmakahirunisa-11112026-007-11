@@ -1,0 +1,570 @@
+/* ==========================================================================
+   STUDIO PAGE STYLES (NEUE GRID VANGUARD - DEDICATED STUDIO EDITOR NP-11)
+   Panel Editor Admin Khusus Tim Internal bikin.portofoliomu
+   ========================================================================== */
+
+:root {
+  --studio-bg-dark: #0a0b0d;
+  --studio-surface-1: #111317;
+  --studio-surface-2: #171a20;
+  --studio-surface-3: #1f232b;
+  --studio-border: #262b35;
+  --studio-border-hover: #3b4252;
+  --studio-text: #f0f2f5;
+  --studio-text-muted: #8b949e;
+  --studio-text-dim: #5c6573;
+  --studio-accent: #FF2A00;
+  --studio-accent-hover: #ff4824;
+  --studio-emerald: #10b981;
+  --studio-danger: #ef4444;
+  --studio-radius-sm: 4px;
+  --studio-radius-md: 6px;
+  --studio-radius-lg: 10px;
+}
+
+/* Root Studio Container - 100% width (tanpa 100vw untuk mencegah horizontal scroll) */
+.studio-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--studio-bg-dark);
+  color: var(--studio-text);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   1. TOPBAR HEADER (KHUSUS STUDIO ADMIN)
+   ========================================================================== */
+.studio-topbar {
+  height: 56px;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: var(--studio-surface-1);
+  border-bottom: 1px solid var(--studio-border);
+  z-index: 50;
+  gap: 12px;
+}
+
+.studio-topbar-left,
+.studio-topbar-center,
+.studio-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Brand badge */
+.studio-brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  background-color: var(--studio-surface-2);
+  border: 1px solid var(--studio-border);
+  border-radius: var(--studio-radius-md);
+}
+
+.studio-brand-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--studio-accent);
+  box-shadow: 0 0 8px var(--studio-accent);
+}
+
+.studio-brand-name {
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.studio-edition-tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6875rem;
+  color: var(--studio-accent);
+  background: rgba(255, 42, 0, 0.1);
+  padding: 2px 6px;
+  border-radius: var(--studio-radius-sm);
+  border: 1px solid rgba(255, 42, 0, 0.2);
+}
+
+/* Auto-save status */
+.studio-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--studio-text-muted);
+}
+
+.text-emerald {
+  color: var(--studio-emerald);
+}
+
+.text-muted {
+  color: var(--studio-text-dim);
+}
+
+/* Segmented Control (View Mode & Device Mode) */
+.studio-segmented-control {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--studio-surface-2);
+  border: 1px solid var(--studio-border);
+  border-radius: var(--studio-radius-md);
+  padding: 3px;
+  gap: 2px;
+}
+
+.segmented-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: var(--studio-text-muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: var(--studio-radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.segmented-btn:hover {
+  color: var(--studio-text);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.segmented-btn.active {
+  background-color: var(--studio-surface-3);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Topbar Action Buttons */
+.studio-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: var(--studio-radius-md);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-decoration: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.studio-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.studio-btn-primary {
+  background-color: var(--studio-accent);
+  color: #ffffff;
+}
+
+.studio-btn-primary:hover:not(:disabled) {
+  background-color: var(--studio-accent-hover);
+}
+
+.studio-btn-secondary {
+  background-color: var(--studio-surface-2);
+  color: var(--studio-text);
+  border-color: var(--studio-border);
+}
+
+.studio-btn-secondary:hover:not(:disabled) {
+  background-color: var(--studio-surface-3);
+  border-color: var(--studio-border-hover);
+}
+
+.studio-btn-danger {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--studio-danger);
+  border-color: rgba(239, 68, 68, 0.2);
+}
+
+.studio-btn-danger:hover:not(:disabled) {
+  background-color: rgba(239, 68, 68, 0.2);
+}
+
+/* ==========================================================================
+   2. WORKSPACE LAYOUT (SPLIT / EDITOR / PREVIEW)
+   ========================================================================== */
+.studio-workspace {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 56px);
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Mode Split: Form di kiri, Preview di kanan */
+.studio-workspace.view-split .studio-editor-pane {
+  width: 540px;
+  min-width: 480px;
+  max-width: 620px;
+  border-right: 1px solid var(--studio-border);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.studio-workspace.view-split .studio-preview-pane {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #070809;
+}
+
+/* Mode Editor Only */
+.studio-workspace.view-editor .studio-editor-pane {
+  flex: 1;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  border-left: 1px solid var(--studio-border);
+  border-right: 1px solid var(--studio-border);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mode Preview Only */
+.studio-workspace.view-preview .studio-preview-pane {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #070809;
+}
+
+/* ==========================================================================
+   3. TABS NAVIGATION & EDITOR PANE
+   ========================================================================== */
+.studio-editor-pane {
+  background-color: var(--studio-surface-1);
+}
+
+.studio-tabs-nav {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  background-color: var(--studio-surface-2);
+  border-bottom: 1px solid var(--studio-border);
+  padding: 6px 12px;
+  gap: 4px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--studio-border) transparent;
+  flex-shrink: 0;
+}
+
+.studio-tabs-nav::-webkit-scrollbar {
+  height: 4px;
+}
+
+.studio-tabs-nav::-webkit-scrollbar-thumb {
+  background-color: var(--studio-border);
+  border-radius: 4px;
+}
+
+.studio-tab-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--studio-text-muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: var(--studio-radius-sm);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.studio-tab-item:hover {
+  color: var(--studio-text);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.studio-tab-item.active {
+  background-color: var(--studio-surface-1);
+  color: #ffffff;
+  border-color: var(--studio-border);
+  border-bottom: 2px solid var(--studio-accent);
+  font-weight: 600;
+}
+
+/* Form Area */
+.studio-form-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--studio-border) transparent;
+}
+
+.studio-form-area::-webkit-scrollbar {
+  width: 6px;
+}
+
+.studio-form-area::-webkit-scrollbar-thumb {
+  background-color: var(--studio-border);
+  border-radius: 4px;
+}
+
+.tab-pane {
+  width: 100%;
+}
+
+.tab-pane-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.tab-pane-desc {
+  font-size: 0.8125rem;
+  color: var(--studio-text-muted);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Form Card */
+.form-card {
+  background-color: var(--studio-surface-2);
+  border: 1px solid var(--studio-border);
+  border-radius: var(--studio-radius-lg);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 580px) {
+  .form-group-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.form-field:last-child {
+  margin-bottom: 0;
+}
+
+.field-label {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--studio-text-muted);
+  font-family: 'Space Mono', monospace;
+}
+
+.field-input,
+.field-textarea,
+.field-select {
+  width: 100%;
+  background-color: var(--studio-bg-dark);
+  border: 1px solid var(--studio-border);
+  color: #ffffff;
+  padding: 9px 12px;
+  border-radius: var(--studio-radius-md);
+  font-size: 0.8125rem;
+  font-family: inherit;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+}
+
+.field-input:focus,
+.field-textarea:focus,
+.field-select:focus {
+  outline: none;
+  border-color: var(--studio-accent);
+  box-shadow: 0 0 0 2px rgba(255, 42, 0, 0.15);
+}
+
+.field-textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.field-hint {
+  font-size: 0.6875rem;
+  color: var(--studio-text-dim);
+}
+
+/* ==========================================================================
+   4. DYNAMIC LIST ITEMS
+   ========================================================================== */
+.item-editor-card {
+  background-color: var(--studio-surface-1);
+  border: 1px solid var(--studio-border);
+  border-radius: var(--studio-radius-md);
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: border-color 0.15s ease;
+}
+
+.item-editor-card:hover {
+  border-color: var(--studio-border-hover);
+}
+
+.item-editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--studio-border);
+}
+
+.item-index-badge {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--studio-accent);
+  background: rgba(255, 42, 0, 0.1);
+  padding: 2px 6px;
+  border-radius: var(--studio-radius-sm);
+}
+
+.item-title-preview {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 240px;
+}
+
+.btn-icon-danger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--studio-text-dim);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--studio-radius-sm);
+  transition: all 0.15s ease;
+}
+
+.btn-icon-danger:hover {
+  color: var(--studio-danger);
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.item-editor-body {
+  padding: 16px;
+}
+
+.btn-add-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px dashed var(--studio-border);
+  color: var(--studio-text-muted);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: var(--studio-radius-md);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin-top: 10px;
+}
+
+.btn-add-item:hover {
+  background-color: rgba(255, 42, 0, 0.05);
+  border-color: var(--studio-accent);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   5. PREVIEW PANE & DEVICE SIMULATOR (DENGAN ISOLASI TANPA PUBLIC NAVBAR)
+   ========================================================================== */
+.studio-preview-pane {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.preview-viewport-wrapper {
+  width: 100%;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Desktop */
+.preview-viewport-wrapper.device-desktop {
+  width: 100%;
+}
+
+/* Tablet: 768px Terpusat */
+.preview-viewport-wrapper.device-tablet {
+  max-width: 768px;
+  margin: 24px auto;
+  border: 2px solid var(--studio-border);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+/* Mobile: 375px Terpusat */
+.preview-viewport-wrapper.device-mobile {
+  max-width: 375px;
+  margin: 24px auto;
+  border: 2px solid var(--studio-border);
+  border-radius: 28px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+/* Spin animation for loader */
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

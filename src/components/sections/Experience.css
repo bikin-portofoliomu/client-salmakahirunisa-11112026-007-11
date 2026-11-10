@@ -1,0 +1,298 @@
+/* ==========================================================================
+   PENGALAMAN PROFESIONAL: SWISS KINETIC MINIMALIST (SECTION 5)
+   Brand: bikin.portofoliomu | Maximized Accent: Swiss Signal Vermilion (#FF2A00)
+   ========================================================================== */
+
+.experience-section {
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-card-border);
+}
+
+.experience-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* Header Row */
+.experience-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.experience-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.experience-title {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+.experience-meta-count {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+/* Timeline Container */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Experience Card */
+.experience-item-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-md, 6px);
+  padding: 32px 36px;
+  overflow: hidden;
+  outline: none;
+  cursor: default;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s ease,
+              box-shadow 0.25s ease,
+              background-color 0.25s ease;
+}
+
+.experience-item-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-accent);
+  box-shadow: 0 10px 30px rgba(255, 42, 0, 0.08);
+}
+
+.experience-item-card:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Accent Strip Indicator */
+.experience-accent-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  background-color: var(--color-accent);
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.experience-item-card:hover .experience-accent-line,
+.experience-item-card:focus-visible .experience-accent-line {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+/* Kolom Meta (Kiri) */
+.experience-meta-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-right: 1px dashed var(--color-card-border);
+  padding-right: 28px;
+}
+
+.experience-idx-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.experience-idx-label {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.experience-slash {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+.experience-period-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background-color: var(--color-card-border);
+  border-radius: var(--radius-sm, 4px);
+  border-left: 2px solid var(--color-accent);
+  width: fit-content;
+}
+
+.period-icon-accent {
+  color: var(--color-accent);
+}
+
+.period-year-text {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: 0.04em;
+}
+
+.experience-company-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.company-icon-accent {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.company-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.35;
+}
+
+/* Kolom Konten (Kanan) */
+.experience-content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.experience-role-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience-role-title {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.experience-description-text {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* Achievements List */
+.experience-achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-card-border);
+}
+
+.achievements-heading-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.achievements-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.achievement-li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.achievement-check-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS (SWISS GRID REFLECTION)
+   ========================================================================== */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .experience-item-card {
+    grid-template-columns: 240px 1fr;
+    gap: 24px;
+    padding: 28px;
+  }
+}
+
+/* Mobile & Small Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  .experience-item-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 20px;
+  }
+
+  .experience-meta-col {
+    border-right: none;
+    border-bottom: 1px dashed var(--color-card-border);
+    padding-right: 0;
+    padding-bottom: 16px;
+  }
+
+  .experience-role-title {
+    font-size: 1.1875rem;
+  }
+
+  .experience-description-text {
+    font-size: 0.875rem;
+  }
+
+  .achievement-li {
+    font-size: 0.8125rem;
+  }
+}
+
+/* Mobile Small (max-width: 480px) */
+@media (max-width: 480px) {
+  .experience-item-card {
+    padding: 20px 16px;
+  }
+}

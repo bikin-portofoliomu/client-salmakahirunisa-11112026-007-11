@@ -1,0 +1,221 @@
+/* ==========================================================================
+   LIGHTBOX: SWISS MINIMALIST VIEWER
+   Brand: bikin.portofoliomu | Maximized Accent: Swiss Signal Vermilion
+   ========================================================================== */
+
+.swiss-lightbox-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  background-color: rgba(8, 8, 10, 0.92);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: lightbox-fade-in var(--duration-fast) var(--ease-swiss);
+}
+
+@keyframes lightbox-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.swiss-lightbox-container {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  max-height: 90vh;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5);
+}
+
+/* Top Bar */
+.lightbox-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border);
+  gap: 16px;
+}
+
+.lightbox-counter-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.counter-current {
+  color: var(--color-accent);
+}
+
+.counter-sep {
+  color: var(--color-text-muted);
+}
+
+.counter-total {
+  color: var(--color-text-secondary);
+}
+
+.lightbox-item-title-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.lightbox-category-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  background-color: var(--color-accent-subtle);
+  padding: 4px 8px;
+  border-radius: var(--radius-xs);
+  white-space: nowrap;
+}
+
+.lightbox-title-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lightbox-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-swiss);
+  flex-shrink: 0;
+}
+
+.lightbox-close-btn:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-accent-contrast);
+}
+
+/* Stage */
+.lightbox-stage {
+  position: relative;
+  flex: 1;
+  min-height: 400px;
+  max-height: calc(90vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #060608;
+}
+
+.lightbox-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(18, 19, 23, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xs);
+  color: #FFFFFF;
+  cursor: pointer;
+  z-index: 10;
+  transition: all var(--duration-fast) var(--ease-swiss);
+}
+
+.lightbox-nav-btn:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: scale(1.05);
+}
+
+.lightbox-image-wrap {
+  position: relative;
+  max-width: calc(100% - 120px);
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-active-img {
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  border-radius: var(--radius-xs);
+}
+
+.lightbox-placeholder-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 60px 40px;
+  text-align: center;
+  color: #9CA3AF;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+}
+
+.fallback-icon-accent {
+  color: var(--color-accent);
+}
+
+/* Caption Bar */
+.lightbox-caption-bar {
+  padding: 14px 20px;
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.lightbox-caption-text {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .swiss-lightbox-backdrop {
+    padding: 12px;
+  }
+
+  .lightbox-stage {
+    min-height: 280px;
+    padding: 10px;
+  }
+
+  .lightbox-nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .lightbox-image-wrap {
+    max-width: calc(100% - 90px);
+  }
+}
