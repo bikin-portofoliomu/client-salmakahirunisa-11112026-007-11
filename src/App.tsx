@@ -20,7 +20,7 @@ export default function App() {
   }, [theme])
 
   useEffect(() => {
-    document.title = 'Salma Kahirunisa'
+    document.title = 'Salma Khairunisa'
   }, [])
 
   const toggleTheme = () => {

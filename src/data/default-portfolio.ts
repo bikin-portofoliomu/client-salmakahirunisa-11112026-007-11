@@ -2,7 +2,7 @@ import type { PortfolioContent, TemplateConfig } from '../types/content'
 
 export const defaultPortfolioData: PortfolioContent = {
   personal: {
-    name: 'SALMA KAHIRUNISA',
+    name: 'SALMA KHAIRUNISA',
     role: 'Content Creator & Social Media Specialist _ OUTLET 23',
     location: 'YOGYAKARTA',
     quote: 'Ubah ide menjadi karya, dan karya menjadi pengalaman',
@@ -406,12 +406,12 @@ export const defaultPortfolioData: PortfolioContent = {
       {
         platform: 'instagram',
         url: 'https://www.instagram.com/invites/contact/?utm_content=xomrd51&srtk=pnmkoglskjxr',
-        label: 'Salma Kahirunisa',
-        handle: 'Salma Kahirunisa',
+        label: 'Salma Khairunisa',
+        handle: 'Salma Khairunisa',
       },
     ],
   },
-  footerCopyright: '© 2026 SALMA KAHIRUNISA. Seluruh Hak Cipta Dilindungi.',
+  footerCopyright: '© 2026 SALMA KHAIRUNISA. Seluruh Hak Cipta Dilindungi.',
   footerSummary:
     'Content Creator & Social Media Specialist _ OUTLET 23. Ubah ide menjadi karya, dan karya menjadi pengalaman.',
   navbarStatus: 'Content Creator & Social Media Specialist _ OUTLET 23',

@@ -1610,7 +1610,7 @@ export const StudioPage: React.FC = () => {
                         className="field-input"
                         value={content.footerCopyright || ''}
                         onChange={(e) => setContent((prev) => ({ ...prev, footerCopyright: e.target.value }))}
-                        placeholder="Contoh: © 2026 SALMA KAHIRUNISA. Seluruh Hak Cipta Dilindungi."
+                        placeholder="Contoh: © 2026 SALMA KHAIRUNISA. Seluruh Hak Cipta Dilindungi."
                       />
                     </div>
                   </div>
